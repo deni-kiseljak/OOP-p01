@@ -53,7 +53,7 @@ public:
 		Assert::AreEqual("double", f4(1.25).c_str());
 	}
 
-	TEST_METHOD(test_5)
+	/*TEST_METHOD(test_5)
 	{
 		std::string s = "root";
 		Assert::IsFalse(f5(s, -50));
@@ -68,21 +68,21 @@ public:
 		Assert::AreEqual("root135", s.c_str());
 		Assert::IsTrue(f5(s, 47));
 		Assert::AreEqual("root1357", s.c_str());
-	}
+	}*/
 
-	TEST_METHOD(test_6)
-	{
-		{
-			std::stringstream ss;
-			f6(10, 20, ss);
-			Assert::AreEqual("10\n20", ss.str().c_str());
-		}
-		{
-			std::stringstream ss;
-			f6(-8, 18, ss);
-			Assert::AreEqual("-8\n18", ss.str().c_str());
-		}
-	}
+	//TEST_METHOD(test_6)
+	//{
+	//	{
+	//		std::stringstream ss;
+	//		f6(10, 20, ss);
+	//		Assert::AreEqual("10\n20", ss.str().c_str());
+	//	}
+	//	{
+	//		std::stringstream ss;
+	//		f6(-8, 18, ss);
+	//		Assert::AreEqual("-8\n18", ss.str().c_str());
+	//	}
+	//}
 };
 
 } // namespace
